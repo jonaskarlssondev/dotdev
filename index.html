@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jonas Karlsson</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+      p {
+        color:#f7f7f7; 
+        margin: 0; 
+        font-family: 'Nunito', sans-serif; 
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+
+      #cursor {
+        border-bottom: solid 1.5px #f7f7f7;
+        position: relative;
+        left: 3px;
+        top: 2px;
+        display: inline-block;
+        width: 9px;
+        animation: cursor 1200ms infinite;
+      }
+
+      @keyframes cursor {
+        50% { border-bottom-color: rgba(255,255,255,1); }
+        100% { border-bottom-color: transparent; }
+      }
+    </style>
+  </head>
+  <body style="background-color: black; margin: 0.4rem 0 0 0.2rem;">
+    <p>> &nbsp; Hello World!</p>
+    <p style="display: inline-block;">> &nbsp; </p><div id="cursor"></div>
+  </body>
+</html>
